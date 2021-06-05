@@ -1,0 +1,1 @@
+let validCommand = ["home", "welcome", "toolman time"]
