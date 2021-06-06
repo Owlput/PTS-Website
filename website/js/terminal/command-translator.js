@@ -1,30 +1,35 @@
 Termpage.init(
   document.getElementById("window"),
   (command) => {
-    command = command.toLowerCase().trim();
-    let isValid = false;
-    for (let input of validCommand) {
-      if (input === command) {
-        isValid = true;
-        break;
-      } else {
-        isValid = false;
+    function commandSplit(inputCommand){
+      let letters = ""
+      inputCommand += " "  
+      inputCommand = inputCommand.toLowerCase()
+      let commands = []
+      for(letter of inputCommand){
+        if(letter != " "){
+          letters += letter
+        } else if(letter == " "){
+          commands.push(letters)
+          letters = ""
+        }
       }
+      return commands
     }
-    if (isValid === true && command === "home") {
-      return "Ptilopsis Terminal Service   "+termVer;
-    } else if (isValid === true && command === "welcome") {
-      return (
-        "Ptilopsis Terminal started\n\
-        " +
-        "Terminal Version " +
-        termVer +
-        "\n\
-        More info: https://github.com/PTS-Maintainers/PTS-Website"
-      );
-    } else if (isValid === true && command === "toolman time") {
-      return Date();
-    } else if (isValid === false) {
+    let com
+    try {com = commandSplit(command)
+    }
+    catch { return "Something is wrong with your command input!"}
+    let _1stArg = com[0]
+    let _2ndArg = com[1]
+    let _3rdArg = com[2]
+    if (_1stArg === "home") {
+      return home()
+    } else if (_1stArg === "welcome") {
+      return welcome()
+    } else if (_1stArg === "toolman" && _2ndArg === "time") {
+      return toolman(_2ndArg)
+    } else {
       return "Command not found";
     }
   },
