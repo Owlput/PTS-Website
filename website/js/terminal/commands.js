@@ -1,27 +1,36 @@
-function toolman(command){
-    if(command == "time"){
-        return Date()
-    } else if(command = calc){
-        return "function in progress"
-    }
+function toolman(command) {
+  if (command == "time") {
+    return Date();
+  } else if (command == "calc") {
+    return wipFlag;
+  } else if (command == "help") {
+    return toolmanHelp;
+  } else {
+    return toolmanHelp;
+  }
 }
-function sysman(command){
-    let serviceStatus = "Online"
-    if(command == "status"){
-        return serviceStatus
-    } else if( command == "statistic"){
-        return getStatistic()
-    }
+function sysman(command) {
+  let serviceStatus = "Online";
+  if (command == "status") {
+    return serviceStatus;
+  } else if (command == "statistic") {
+    return getStatistic();
+  } else {
+      return sysmanHelp
+  }
 }
-function legalDocs(){
-    return "LICENSE: MIT License"
+function legalDocs() {
+  return "LICENSE: MIT License";
 }
-function home(){
-    return "Ptilopsis Terminal Service   "+getServiceVersion()[0]
+function home() {
+  return "Ptilopsis Terminal Service   " + getServiceVersion()[0];
 }
-function welcome(){
-    return "Ptilopsis Terminal loaded\n\
-    Ptilopsis Terminal Service connected\n\
-    Ptilopsis Terminal Version "+getServiceVersion()[0]+ "   PTS-API Version "+getServiceVersion()[1]+"\n\
-    Visit https://github.com/PTS-Maintainers/PTS-Website for more info"
+function welcome() {
+  return welcomeMessage;
+}
+function dbman() {
+  return wipFlag;
+}
+function help() {
+  return helpMessage;
 }
