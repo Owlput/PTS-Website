@@ -1,7 +1,6 @@
 Termpage.init(document.getElementById('window'), (command) => {
     command = command.toLowerCase().trim();
     let isValid = false
-    let termVer = "2021.6.5"
     for(let input of validCommand){
         if(input === command){
          isValid = true
