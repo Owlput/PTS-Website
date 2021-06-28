@@ -20,7 +20,7 @@ Termpage.init(
     try {
       com = commandSplit(command);
     } catch {
-      return "Something is wrong with your command input!";
+      console.log("Something is wrong with your command input!");
     }
     let _1stArg = com[0];
     let _2ndArg = com[1];

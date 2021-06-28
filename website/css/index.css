@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(219, 239, 255);
+}
+footer{
+    background-color: rgb(38, 38, 38);
+    height: fit-content;
+}
+#headline{
+    background-color:rgba(255,255,255,0.68);
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#headline-en{
+    font-size: 110%;
+    text-align: center;
+    margin-top: 0.1em;
+}
+#headline-zh{
+    text-align: center;
+    margin-bottom: 0.1em;
+}
+#icp-info{
+    color: white;
+    text-align: center;
+}
+#copyright{
+    color: white;
+    text-align: center;
+}
