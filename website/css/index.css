@@ -33,6 +33,14 @@ footer {
     margin-left: 5%;
     margin-right: 5%;
 }
+.nb{
+  text-align: center;
+  font-size: 200%;
+}
+.nb b{
+  text-align: inherit;
+  font-size: 300%;
+}
 #footer-flexbox{
     display: flex;
     justify-content: center;
@@ -40,6 +48,19 @@ footer {
 }
 .footer-flexcont{
     align-self: center;
+}
+#bg-source a{
+    color: inherit;
+    text-decoration: none;
+}
+#links{
+  text-decoration: none;
+  align-self:flex-end;
+  
+}
+#links a{
+  color: inherit;
+  text-decoration: inherit;
 }
 #auth{
     float:right;
