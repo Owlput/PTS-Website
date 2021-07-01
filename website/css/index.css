@@ -43,30 +43,33 @@ footer {
 }
 #footer-flexbox{
     display: flex;
-    justify-content: center;
-    flex-direction:column;
+    align-items: center;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
-.footer-flexcont{
-    align-self: center;
+#footer-info-wrapper{
+  margin: 1% 1%;
 }
-#bg-source a{
-    color: inherit;
+#bg-source{
+    color: white;
     text-decoration: none;
 }
 #links{
   text-decoration: none;
-  align-self:flex-end;
-  
+  width: auto;
+}
+#links h3{
+  margin :5% 5%;
 }
 #links a{
   color: inherit;
   text-decoration: inherit;
+  margin:3% 5%;
 }
 #auth{
-    float:right;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 1em;
+  float: right;
+  margin: 0px 0px 0px 1em;
 }
 .white-text{
     color: white;
