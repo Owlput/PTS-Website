@@ -1,8 +1,9 @@
 body {
   background-image: url(../img/75309657_p0.jpg);
-  background-size: 100%;
-  background-attachment: fixed;
+  background-position-x: -150px;
+  background-attachment: scroll;
   background-repeat: no-repeat;
+  background-color: gainsboro;
 }
 footer {
   background-color: rgb(38, 38, 38);
@@ -39,7 +40,7 @@ footer {
 }
 .nb b{
   text-align: inherit;
-  font-size: 300%;
+  font-size: 200%;
 }
 #footer-flexbox{
     display: flex;
@@ -47,6 +48,7 @@ footer {
     flex-direction:row;
     flex-wrap: wrap;
     justify-content: space-around;
+    min-height: 10em;
 }
 #footer-info-wrapper{
   margin: 1% 1%;
@@ -55,9 +57,9 @@ footer {
     color: white;
     text-decoration: none;
 }
-#links{
+.plain-link{
   text-decoration: none;
-  width: auto;
+  color: white;
 }
 #links h3{
   margin :5% 5%;
@@ -67,10 +69,10 @@ footer {
   text-decoration: inherit;
   margin:3% 5%;
 }
-#auth{
-  float: right;
-  margin: 0px 0px 0px 1em;
-}
 .white-text{
     color: white;
+}
+@font-face {
+  font-family: JetbrainsMono;
+  src: url(/fonts/JetBrainsMono/webfonts/JetBrainsMono-Regular.woff2);
 }

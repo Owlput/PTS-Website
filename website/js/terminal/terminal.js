@@ -12,7 +12,7 @@ Ptilopsis Terminal Version " +
   "   PTS-API Version " +
   getServiceVersion()[1] +
   "\n\
-Visit https://github.com/PTS-Maintainers/PTS-Website for more info";
+Visit https://github.com/Owlput/PTS-Website for more info";
 let wipFlag = "WORK IN PROGRESS";
 let helpMessage =
   "Enter a command\n\
