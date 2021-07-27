@@ -74,5 +74,5 @@ footer {
 }
 @font-face {
   font-family: JetbrainsMono;
-  src: url(/fonts/JetBrainsMono/webfonts/JetBrainsMono-Regular.woff2);
+  src: url(../fonts/JetBrainsMono/webfonts/JetBrainsMono-Regular.woff2);
 }
