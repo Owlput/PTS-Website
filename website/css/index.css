@@ -16,8 +16,8 @@ footer {
   box-shadow: 10px #eeeeee;
 }
 .no-margin-tb {
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 #introduction{
   text-align: center;
@@ -46,12 +46,10 @@ footer {
   text-align: inherit;
   font-size: 200%;
 }
-#footer-flexbox{
-    display: flex;
-    align-items: center;
-    flex-direction:row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+#footer-grid{
+    display: grid;
+    grid-template-columns: repeat(3,30%);
+    gap: 5%;
     min-height: 10em;
 }
 #footer-info-wrapper{
